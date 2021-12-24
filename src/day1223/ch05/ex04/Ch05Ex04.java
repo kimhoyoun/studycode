@@ -23,9 +23,6 @@ class WorkStudent extends Student{
 		System.out.println(">> 3. 근로학생의 생성자 호출!");
 	}
 }
-class student{
-	
-}
 public class Ch05Ex04 {
 
 	public static void main(String[] args) {
