@@ -108,7 +108,7 @@ class MusicPlayer {
 			findMusic(musicList[index]); 
 			break;
 		case 4: 
-			removeMusic();
+			removeMusic(2);
 			break;
 		case 5:	System.exit(0);
 		

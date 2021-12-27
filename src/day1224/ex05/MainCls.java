@@ -146,6 +146,7 @@ class MusicList extends ViewPage{
 	public void display() {
 		System.out.println("--------------- 노래 목록 ---------------");
 		for(Music music : R.musicList) {
+			if(music == null) break;
 			music.play();
 		}
 	}
@@ -184,13 +185,15 @@ class MusicPlayer {
 		case 1: 
 			vc.run(R.input);
 			if(R.music != null) {
-				
+				R.dam.appendMusic(R.music);
 			}
 			break;
-		case 2: vc.run(R.listPage); break;
+		case 2: 
+			R.musicList = R.dam.getAllMusic();
+			vc.run(R.listPage); break;
 		case 3: vc.run(R.delete); break;
 		case 4: System.out.println("준비중...");
-		case 5: System.exit(0); break;
+		case 5: System.out.println("끝!"); System.exit(0); break;
 		}
 		
 		R.no = 0;
@@ -204,7 +207,8 @@ class MusicPlayer {
 public class MainCls {
 	public static void main(String[] args) {
 		// View를 만들고 view 테스트
-		
+		MusicPlayer player = new MusicPlayer();
+		player.action();
 	}
 	
 	public static void model_test(String[] args) {
