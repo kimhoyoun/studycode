@@ -10,38 +10,68 @@ public class StudentModify extends StudentView {
 		int no =0;
 		if (Binding.studentVo == null) {
 			System.out.println("검색된 학생이 없습니다.");
-		} else {
-			System.out.println("어떤걸 수정하시겠습니까>");
-			System.out.println("1.이름 2.국어점수 3.영어점수 4.수학점수");
-			System.out.print("선택 >> ");
-			no = scan.nextInt();
-			switch (no) {
-			case 1: 
-				System.out.println("새로운 이름을 입력해 주세요!");
-				System.out.print("이름 >> ");
-				String newName = scan.next();
-				Binding.studentVo.setName(newName);
-				break;
-			case 2:
-				System.out.println("새로운 국어 점수를 입력해 주세요!");
-				System.out.print("국어점수 >> ");
-				int newKor = scan.nextInt();
-				Binding.studentVo.setKor(newKor);
-				break;
-			case 3:
-				System.out.println("새로운 영어 점수를 입력해 주세요!");
-				System.out.print("영어점수 >> ");
-				int newEng = scan.nextInt();
-				Binding.studentVo.setEng(newEng);
-				break;
-			case 4:
-				System.out.println("새로운 수학 점수를 입력해 주세요!");
-				System.out.print("수학점수 >> ");
-				int newMath = scan.nextInt();
-				Binding.studentVo.setMath(newMath);
-				break;
-			}
-			System.out.println("수정이 완료 되었습니다!");
+			return;
 		}
+//		System.out.println("어떤걸 수정하시겠습니까>");
+//		System.out.println("1.이름 2.국어점수 3.영어점수 4.수학점수");
+//		System.out.print("선택 >> ");
+//		no = scan.nextInt();
+//		switch (no) {
+//		case 1: 
+//			System.out.println("새로운 이름을 입력해 주세요!");
+//			System.out.print("이름 >> ");
+//			String newName = scan.next();
+//			Binding.studentVo.setName(newName);
+//			break;
+//		case 2:
+//			System.out.println("새로운 국어 점수를 입력해 주세요!");
+//			System.out.print("국어점수 >> ");
+//			int newKor = scan.nextInt();
+//			Binding.studentVo.setKor(newKor);
+//			break;
+//		case 3:
+//			System.out.println("새로운 영어 점수를 입력해 주세요!");
+//			System.out.print("영어점수 >> ");
+//			int newEng = scan.nextInt();
+//			Binding.studentVo.setEng(newEng);
+//			break;
+//		case 4:
+//			System.out.println("새로운 수학 점수를 입력해 주세요!");
+//			System.out.print("수학점수 >> ");
+//			int newMath = scan.nextInt();
+//			Binding.studentVo.setMath(newMath);
+//			break;
+//		}
+		
+		System.out.print("이름을 수정하시습니까? (y/n) >> ");
+		char yn = scan.next().charAt(0);
+		if(yn == 'y' || yn == 'Y') {
+			System.out.print("새이름 >> ");
+			String newName = scan.next();
+			Binding.studentVo.setName(newName);
+		}
+		System.out.print("국어 점수를 수정하시습니까? (y/n) >> ");
+		yn = scan.next().charAt(0);
+		if(yn == 'y' || yn == 'Y') {
+			System.out.print("새 국어점수 >> ");
+			int newKor = scan.nextInt();
+			Binding.studentVo.setKor(newKor);
+		}
+		System.out.print("영어 점수를 수정하시습니까? (y/n) >> ");
+		yn = scan.next().charAt(0);
+		if(yn == 'y' || yn == 'Y') {
+			System.out.print("새 영어점수 >> ");
+			int newEng = scan.nextInt();
+			Binding.studentVo.setEng(newEng);
+		}
+		System.out.print("수학 점수를 수정하시습니까? (y/n) >> ");
+		yn = scan.next().charAt(0);
+		if(yn == 'y' || yn == 'Y') {
+			System.out.print("새 수학점수 >> ");
+			int newMath = scan.nextInt();
+			Binding.studentVo.setMath(newMath);
+		}
+		System.out.println("수정이 완료 되었습니다!");
+		
 	}
 }

@@ -9,6 +9,7 @@ import day1227.org.saram.view.SaramDetail;
 import day1227.org.saram.view.SaramEdit;
 import day1227.org.saram.view.SaramListView;
 import day1227.org.saram.view.SaramView;
+import day1227.org.saram.view.SearchByName;
 
 // 데이터 바인딩을 위한 클래스 R
 public class R {
@@ -32,6 +33,7 @@ public class R {
 	public static final SaramView saramDetail = new SaramDetail();
 	public static final SaramView saramEdit = new SaramEdit();
 	public static final SaramView saramListView = new SaramListView();
+	public static final SaramView searchByName = new SearchByName();
 	
 	public static final SaramController saramController = new SaramController();
 }
