@@ -53,6 +53,6 @@ public class NoticeVo {
 	
 	@Override
 	public String toString() {
-		return no + "\t" + user + "\t" + message + "\t\t" + regDate;
+		return no + "\t" + user + "\t" + String.format("%-20s", message) + "\t" + regDate;
 	}
 }

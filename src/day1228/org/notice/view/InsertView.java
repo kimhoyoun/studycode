@@ -11,7 +11,8 @@ public class InsertView extends NoticeView{
 		System.out.print("User >> ");
 		String user = sc.next();
 		System.out.print("Message >> ");
-		String message = sc.next();
+		sc.nextLine();
+		String message = sc.nextLine();
 		String date = new DateGet().getDate();
 		
 		R.noticeVo = new NoticeVo(0,user,message,date);

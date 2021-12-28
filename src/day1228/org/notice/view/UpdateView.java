@@ -20,7 +20,8 @@ public class UpdateView extends NoticeView {
 		yn = sc.next().charAt(0);
 		if(yn == 'y'|| yn == 'Y') {
 			System.out.print("새 메세지 입력 >> ");
-			String newMessage = sc.next();
+			sc.nextLine();
+			String newMessage = sc.nextLine();
 			R.noticeVo.setMessage(newMessage);
 		}
 		System.out.println("날짜 및 시간이 수정되었습니다. ");
