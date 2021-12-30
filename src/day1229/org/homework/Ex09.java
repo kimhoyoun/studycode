@@ -29,24 +29,22 @@ class StringStack implements Stack{
 	@Override
 	public int capacity() {
 		// TODO Auto-generated method stub
-		return list.length - top;
+		return list.length;
 	}
 
 	@Override
 	public String pop() {
-		String str="";
-		str = list[--top];
 		
-		if(top<0) {
+		if(top-1<0) {
 			return null;
-		}else {
-			return str;			
 		}
+		return list[--top];			
+		
 	}
 
 	@Override
 	public boolean push(String val) {
-		if(top>=list.length) {
+		if(top>=capacity()) {
 			return false;
 		}else {
 			list[top++] = val;
@@ -71,14 +69,18 @@ public class Ex09 {
 				break;
 			}
 			
-			boolean flag = s.push(str);
-			if(flag == false) {
+			if(!s.push(str)) {
 				System.out.println("스택이 꽉 차서 푸시 불가!");
 			}
 		}
 		System.out.print("스택에 저장된 모든 문자열 팝 : ");
-		for(int i = 0; i<cap; i++) {
-			System.out.print(s.pop() + " ");
+		while(true) {
+			String str = s.pop();
+			if(str == null) {
+				break;
+			}
+			System.out.print(str+ " ");
 		}
+		System.out.println();
 	}
 }
