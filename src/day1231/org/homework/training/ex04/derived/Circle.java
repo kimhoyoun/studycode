@@ -1,6 +1,6 @@
-package day1231.org.homework.training.derived;
+package day1231.org.homework.training.ex04.derived;
 
-import day1231.org.homework.training.base.Shape;
+import day1231.org.homework.training.ex04.base.Shape;
 
 public class Circle extends Shape{
 	@Override

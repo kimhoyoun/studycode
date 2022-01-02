@@ -1,4 +1,4 @@
-package day1231.org.homework.training;
+package day1231.org.homework.training.ex01;
 
 public class MyPoint {
 	int x, y;

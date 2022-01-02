@@ -1,6 +1,6 @@
-package day1231.org.homework.training.main;
+package day1231.org.homework.training.ex03.main;
 
-import day1231.org.homework.training.etc.Calc;
+import day1231.org.homework.training.ex03.etc.Calc;
 
 public class MainApp {
 	public static void main(String[] args) {

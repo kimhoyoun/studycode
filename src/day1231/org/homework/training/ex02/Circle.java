@@ -1,4 +1,4 @@
-package day1231.org.homework.training;
+package day1231.org.homework.training.ex02;
 
 public class Circle {
 	int x,y,r;

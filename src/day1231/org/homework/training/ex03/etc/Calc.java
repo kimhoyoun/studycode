@@ -1,4 +1,4 @@
-package day1231.org.homework.training.etc;
+package day1231.org.homework.training.ex03.etc;
 
 public class Calc {
 	private int x, y;

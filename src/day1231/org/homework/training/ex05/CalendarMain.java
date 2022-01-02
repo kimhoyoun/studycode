@@ -1,4 +1,4 @@
-package day1231.org.homework.training;
+package day1231.org.homework.training.ex05;
 
 import java.util.Calendar;
 
