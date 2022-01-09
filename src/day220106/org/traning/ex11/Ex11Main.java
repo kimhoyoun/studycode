@@ -41,6 +41,10 @@ class Ex11{
 			}
 		}
 		
+		
+		
+		
+		
 		System.out.println("프로젝트 폴더 밑의 words.txt 파일을 읽었습니다 .... ");
 		while(true) {
 			System.out.print("단어 >> ");
